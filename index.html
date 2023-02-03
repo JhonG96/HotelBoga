@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel el Boga</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v6.2.1/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script> 
+    <script defer src="https://use.fontawesome.com/releases/v6.2.1/js/fontawesome.js"> </script>
+
+    <link rel="icon" href="/img/hotel-48.png">
+  <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+</head>
+<body>
+
+    <!---header-->
+
+
+    <header class="header" id="header">
+        <div id="head-top" class="head-top">
+            <div class="site-name">
+                <span>Hotel Boga</span>
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn">Menu <i class  ="fas fa-bars"></i></span>
+            </div>
+        </div>
+    
+    
+    </header>
+        <div class="head-bottom flex">
+            <h2>Un lugar increible y confortante</h2>
+            <p>Quieres tener un fin de semana increible cerca a Bogotá. Ven a Girardot al Hotel el Boga y disfruta del clima de está hermosa ciudad, de los paisajes y de las noches llena de musica.</p>
+            <a href="https://wa.me/+573102205920?text=Hola,Quiero%20hacer%20una%20reserva" target="_blank"><button tpe="button" class="head-btn">Reserva</button></a>
+        </div>
+    
+
+    <!---end of header-->
+
+    <!--side navbar--->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
+
+        <ul class="navbar">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#hServices">Servicios</a></li>
+            <li><a href="#rooms">Habitaciones</a></li>
+            <li><a href="#customers">clientes</a></li>
+        </ul>
+
+    </div>
+    <!--end side navbar--->
+
+    <!----fullscreen modal-->
+    <div id="modal"></div>
+    <!----end fullscreen modal -->
+
+    <!----body content-->
+
+    <div class = "book">
+        <form class = "book-form"  method="POST" target="_blank">
+            <div class = "form-item">
+                <label for = "checkin-date">Check In Date: </label>
+                <input type = "date" id = "chekin-date" name="checkin">
+            </div>
+            <div class = "form-item">
+                <label for = "checkout-date">Check Out Date: </label>
+                <input type = "date" id = "chekout-date" name="checkout">
+            </div>
+            <div class = "form-item">
+                <label for = "adults">Adultos: </label>
+                <input type = "number" placeholder="# Adultos" name="adultos" min = "1" value = "1" id = "adult">
+            </div>
+            <div class = "form-item">
+                <label for = "children">Children: </label>
+                <input type = "number" name="children" min = "0" value = "1" id = "children">
+            </div>
+            <div class = "form-item">
+                <label for = "rooms">Rooms: </label>
+                <input type = "number" name="rooms"" min = "1" value = "1" id = "rooms">
+            </div>
+            <div class = "form-item">
+                  
+                  <a id="enlace" href="#"  target="_blank"><button type="button" class = "btn" value = "Book Now" onclick="url()">  Book Now</button> </a>           
+                </div>
+        </form>
+    </div>
+    <section class="services sec-width" id="services">
+        <div class="tittle">
+            <h2 class="title-service">Servicios</h2>
+        </div>
+        <div class="services-container">
+    <!---single service-->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-wind"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Aire acondicionado</h2>
+                    <p>En el hotel el Boga las habitaciones tienen aire acondicionado para refrescar tu estancia en nuestro hotel.</p>
+                 
+                </div>
+            </article>
+    <!---end single service-->
+<!---single service-->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-swimming-pool"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Convenio Piscina</h2>
+                    <p>En nuestro hotel no tenemos piscina pero contamos convenio con el Parque de Olas el cual cuenta con 3 toboganes y una piscina de olas la cual prenden cada 30 minutos, el convenio consisten en un descuento especial para los clientes del hotel Boga.</p>
+                  </div>
+            </article>
+    <!---end single service-->
+    <!---single service-->
+    <article class="service">
+        <div class="service-icon">
+            <span>
+                <i class="fas fa-wifi"></i>
+            </span>
+        </div>
+        <div class="service-content">
+            <h2>Wifi</h2>
+            <p>El hotel cuenta con servicio de Wifi si vienes por trabaj o quieres ver netflix mientras en tu estancia.</p>
+        </div>
+    </article>
+<!---end single service-->
+    <!---single service-->
+    <article class="service">
+        <div class="service-icon">
+            <span>
+                <i class="fas fa-car"></i>
+            </span>
+        </div>
+        <div class="service-content">
+            <h2>Parqueadero</h2>
+            <p>Si traes carro o moto puedes estacionarla en nuestras instalaciones de manera segura sin costo adicional, puedes disfrutar de este servicio de manera gratuira con tu noche de alojamiento en Girardot.</p>
+        </div>
+    </article>
+<!---end single service-->
+        </div>
+    </section>
+
+   
+
+    <section class="room-section" id="rooms">
+ 
+        <!----single room----->
+        <div class="room">
+            
+            <div class="room-text">
+                <h2>Nuestras instalaciones</h2>
+                <p>Conocer nuestras instalaciones para que te enamores antes de venir.</p>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/suit2.jpeg" style="width:80%;" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Habitación Suit</h5>
+                          <p>Mira una de nuestras hermosas habitaciones para varias personas.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/habiatacionmultiple.jpeg" style="width:80%;" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Habitación multiple</h5>
+                          <p>Mira una de nuestras hermosas habitaciones para varias personas.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/frente1.jpg" style="width:80%;" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+        </div>
+        <!-- end of single room -->
+    </section>
+    
+    <section class = "customers" id = "customers">
+        <div class = "sec-width">
+            <div class = "title">
+                <h2>Nuestros clientes</h2>
+            </div>
+            <div class = "customers-container">
+                <!-- single customer -->
+                <div class = "customer">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>
+                    <h3>We Loved it</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                    <img src = "img/usuaria1.jpg" alt = "customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <!-- end of single customer -->
+                <!-- single customer -->
+                <div class = "customer">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>
+                    <h3>Comfortable Living</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                    <img src = "img/usuario1.png" alt = "customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <!-- end of single customer -->
+
+                <!-- end of single customer -->
+            </div>
+        </div>
+    </section>
+    <!-- end of body content -->
+    
+    <!-- footer -->
+    <footer class = "footer">
+        <div class = "footer-container">
+            <div>
+                <h2>Acerca de nosotros</h2>
+                <p>Somos un hotel ubicado en la ciudad de Girardot, cerca a la terminal de transporte y a la zona rosa. Aqui podrás disfrutar en familia.</p>
+                <ul class = "social-icons">
+                     <li class = "flex">
+                        <i class = "fa fa-facebook fa-2x"></i>
+                    </li>
+                    <li class = "flex">
+                        <i class = "fa fa-instagram fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Más de nosotros</h2>
+                <a href = "#">Blog</a>
+                <a href = "#">Rooms</a>
+               
+            </div>
+
+            <div>
+                <h2>Un poco de nosotros</h2>
+                <a href = "#">Acerca de</a>
+                <a href = "#">Contactanos</a>
+                <a href = "#">Servicios</a>
+            </div>
+
+            <div>
+                <h2>Donde estamos</h2>
+                <div class = "contact-item">
+                    <span>
+                        <i class = "fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        CLL 21 # 13-05 Barrio Sucre, Girardot.
+                    </span>
+                </div>
+                <div class = "contact-item">
+                    <span>
+                        <i class = "fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        <a href="https://wa.me/+573102205920?text=Hola,%20Quiero%20hacer%20una%20reserva" target="_blank">3102205920</a>
+                    </span>
+                </div>
+                <div class = "contact-item">
+                    <span>
+                        <i class = "fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        info@hotelboga.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    
+    <script src="main.js"></script>
+</body>
+</html>
